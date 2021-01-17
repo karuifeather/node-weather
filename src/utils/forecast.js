@@ -17,9 +17,12 @@ const forecast = (lat, long, callback) => {
         humidity,
         precip,
         weather_descriptions: desc,
+        feelslike,
+        wind_speed,
+        pressure,
       } = body.current;
 
-      const summary = `${desc[0]}. The temperature in ${city} is ${temp}C with humidity of ${humidity} and precipitation of ${precip}, as recorded at its local time of ${time}.`;
+      const summary = `${desc[0]}. The temperature in ${city} is ${temp} degree Celsius with humidity of ${humidity}% and precipitation of ${precip} mm, as recorded at its local time of ${time}. Wind speed is ${wind_speed} km/hr while the pressure is ${pressure} mb. It feels like ${feelslike} degrees outside.`;
       callback(undefined, summary);
     }
   });

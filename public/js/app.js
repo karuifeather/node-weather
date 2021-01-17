@@ -23,7 +23,10 @@ weatherForm.addEventListener('submit', (e) => {
         `<h2>You searched for <strong>${data.address}</strong> </h2>`
       );
       outputDiv.insertAdjacentHTML('beforeend', `<h3>${data.location}</h3>`);
-      outputDiv.insertAdjacentHTML('beforeend', `<p>${data.forecast}</p>`);
+      outputDiv.insertAdjacentHTML(
+        'beforeend',
+        `<p id="summary">${data.forecast}</p>`
+      );
     });
   });
 });
