@@ -15,8 +15,8 @@ body {
   height: 100vh;
   background: #333 no-repeat center center / cover;
   background-image: linear-gradient(
-      rgba(22, 22, 22, 0.479),
-      rgba(22, 22, 22, 0.342)
+      rgba(22, 22, 22, 0.9),
+      rgba(22, 22, 22, 0.7)
     ),
     url("../img/city.jpg");
   color: #ddd;
@@ -99,6 +99,10 @@ button {
   color: white;
   cursor: pointer;
   background-color: #ccc;
+}
+
+#summary {
+  color: #c5c5c5;
 }
 
 /* cursor */
