@@ -1,5 +1,3 @@
-console.log('Client side Javascript loaded.');
-
 const weatherForm = document.querySelector('form');
 const search = document.querySelector('input');
 const outputDiv = document.querySelector('.output');
@@ -7,7 +5,7 @@ const outputDiv = document.querySelector('.output');
 weatherForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  outputDiv.textContent = 'Loading...'
+  outputDiv.textContent = 'Loading...';
 
   fetch(`http://localhost:3000/weather?address=${search.value}`).then(
     (result) => {
